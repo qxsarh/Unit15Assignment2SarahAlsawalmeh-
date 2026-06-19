@@ -2,12 +2,12 @@ margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+ 
 body {
     font-family: Arial, sans-serif;
     background-color: #f7c6d4;
 }
-
+ 
 /* NAVIGATION */
 .navbar {
     display: flex;
@@ -16,17 +16,32 @@ body {
     padding: 20px 40px;
     background-color: #6b3e4a;
 }
-
+ 
 .logo {
-    font-size: 28px;
+    font-size: 40px;
 }
-
+ 
+ 
+/* BRAND */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+ 
+.brand-name {
+    color: #ffd6e2;
+    font-size: 18px;
+    font-weight: bold;
+}
+ 
+ 
 .navbar ul {
     list-style: none;
     display: flex;
     gap: 15px;
 }
-
+ 
 .navbar a {
     text-decoration: none;
     padding: 8px 18px;
@@ -35,17 +50,17 @@ body {
     border-radius: 20px;
     font-size: 14px;
 }
-
+ 
 .navbar a.active {
     background-color: #ffd6e2;
 }
-
+ 
 /* HERO SECTION */
 .hero {
     display: flex;
     height: calc(100vh - 80px);
 }
-
+ 
 /* LEFT SIDE */
 .hero-text {
     width: 40%;
@@ -55,12 +70,12 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-
+ 
 .hero-text p {
     line-height: 1.6;
     margin-bottom: 25px;
 }
-
+ 
 .hero-text button {
     width: 120px;
     padding: 10px;
@@ -70,7 +85,7 @@ body {
     color: white;
     cursor: pointer;
 }
-
+ 
 /* RIGHT SIDE */
 .hero-image {
     width: 60%;
@@ -80,14 +95,34 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+ 
 .hero-image h2 {
     position: absolute;
     top: 80px;
     color: #f7b7c8;
     font-size: 36px;
 }
-
+ 
 .hero-image img {
-    max-width: 70%;
+    max-width: 80%;
+    position: relative;
+    top: 60px;
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.2));
+}
+ 
+ 
+.hero-image img {
+    display: block;
+    margin: 0 auto;
+}
+/* FOOTER */
+.footer {
+    background-color: #6b3e4a;
+    color: #ffd6e2;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 3px solid #ffd6e2;
 }
