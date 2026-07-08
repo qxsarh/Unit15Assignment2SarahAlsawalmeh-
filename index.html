@@ -2,32 +2,33 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cat Café</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
- 
+
 <body>
- 
+
     <!-- Navigation -->
 <nav class="navbar">
 <div class="brand">
 <span class="logo">🐾</span>
 <span class="brand-name">Whiskers Cat Café</span>
 </div>
- 
+
 <ul>
-<li><a href="index.html">Home</a></li>
+<li><a href="index.html" class="active">Home</a></li>
 <li><a href="pages/cats.html">Our Cats</a></li>
 <li><a href="pages/menu.html">Menu</a></li>
 <li><a href="pages/booking.html">Book Visit</a></li>
 <li><a href="pages/rules.html">Rules</a></li>
 </ul>
- 
+
 </nav>
- 
+
     <!-- Main Section -->
 <section class="hero">
- 
+
         <!-- Left content -->
 <div class="hero-text">
 <p>
@@ -37,18 +38,79 @@
 <br><br>
     At Whiskers Cat Café, we place a strong focus on comfort, relaxation, and animal welfare. creating an enjoyable and memorable experience for everyone.
 </p>
- 
-            <button>See More</button>
+
+            <button onclick="document.getElementById('why-visit').scrollIntoView({behavior: 'smooth'})">See More</button>
 </div>
- 
+
         <!-- Right content -->
 <div class="hero-image">
 <h2>Meet Our Café Cats</h2>
-<img src="https://cdn.corenexis.com/f/oShSpn9kdUn.png"> alt="Cat in the café">
+<img src="https://cdn.corenexis.com/f/oShSpn9kdUn.png" alt="Cat in the café">
 </div>
- 
+
     </section>
- 
+
+    <!-- Why Visit Us -->
+<section id="why-visit" class="features-section">
+    <h2>Why Visit Us</h2>
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">🛋️</div>
+            <h3>A Calm Space</h3>
+            <p>A cosy, relaxed environment designed to help you unwind and slow down.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🐱</div>
+            <h3>Friendly Cats</h3>
+            <p>Meet our resident cats, each with their own personality, ready to say hello.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">☕</div>
+            <h3>Great Coffee</h3>
+            <p>Freshly brewed drinks and treats, made to enjoy alongside good company.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Featured Cats -->
+<section class="featured-cats-section">
+    <h2>Meet a Few of Our Cats</h2>
+    <div class="featured-cats-grid">
+        <div class="featured-cat-card">
+            <div class="cat-avatar">🐱</div>
+            <h3>Luna</h3>
+            <p class="cat-tagline">Friendly &amp; Calm</p>
+            <p>Loves curling up on laps and greeting new visitors.</p>
+        </div>
+        <div class="featured-cat-card">
+            <div class="cat-avatar">🐈</div>
+            <h3>Milo</h3>
+            <p class="cat-tagline">Playful &amp; Energetic</p>
+            <p>Always ready for a game with a feather toy.</p>
+        </div>
+    </div>
+    <a href="pages/cats.html" class="view-all-link">Meet All Our Cats →</a>
+</section>
+
+    <!-- Testimonials -->
+<section class="testimonials-section">
+    <h2>What Our Visitors Say</h2>
+    <div class="testimonials-grid">
+        <div class="testimonial-card">
+            <p>"Such a relaxing way to spend an afternoon. Luna curled up on my lap within minutes!"</p>
+            <span class="testimonial-author">— Sarah T.</span>
+        </div>
+        <div class="testimonial-card">
+            <p>"Milo kept us entertained the whole visit. The coffee was great too."</p>
+            <span class="testimonial-author">— James R.</span>
+        </div>
+        <div class="testimonial-card">
+            <p>"A lovely, calm space with genuinely happy, well looked-after cats."</p>
+            <span class="testimonial-author">— Priya K.</span>
+        </div>
+    </div>
+</section>
+
     <!-- Footer -->
 <footer class="footer">
 <div class="footer-content">
@@ -56,11 +118,6 @@
 <p>Follow us: Instagram | Facebook | TikTok</p>
 </div>
 </footer>
- 
+
 </body>
 </html>
-  
- 
-
-    
-
