@@ -4,60 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book a Visit | Whiskers Cat Café</title>
+    <title>Book a Visit</title>
+
     ../css/style.css
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="brand">
-            <span class="logo">🐾</span>
-            <span class="brand-name">Whiskers Cat Café</span>
-        </div>
+<nav class="navbar">
+    <div class="brand">
+        <span class="logo">🐾</span>
+        <span class="brand-name">Whiskers Cat Café</span>
+    </div>
 
-        <ul>
-            <li>../index.html</li>
-            <li>cats.html">Our Cats</a></li>
-            <li>">Menu</a></li>
-            <li>" class="active">Book Visit</a></li>
-            <li><a href="rules.html">Rules</a></li>
-        </ul>
-    </nav>
+    <ul>
+        <li>../index.htmlHome</a></li>
+        <li><a href="cats.html">Our Cats</a></li>
+        <li>">Menu</a></li>
+        <li>.html">Book Visit</a></li>
+        <li><a href="rules.html">Rules</a></li>
+    </ul>
+</nav>
 
-    <!-- Booking Section -->
-    <section class="booking-section">
+<h2>Book a Visit</h2>
 
-        <h2>Book a Visit</h2>
+<p>
+Reserve your visit to Whiskers Cat Café and enjoy quality time with our
+friendly cats in a relaxing environment.
+</p>
 
-        <p>
-            Reserve your visit to Whiskers Cat Café and enjoy quality time with
-            our friendly cats in a relaxing environment.
-        </p>
+<form class="booking-form" onsubmit="return validateForm()">
 
-        <form class="booking-form" onsubmit="return validateForm()">
+    <input type="text" id="name" placeholder="Enter your name">
 
-            <input type="text" id="name" placeholder="Enter your name">
+    <input type="date" id="date">
 
-            <input type="date" id="date">
+    <button type="submit">Book Now</button>
 
-            <button type="submit">Book Now</button>
+</form>
 
-        </form>
+<footer class="footer">
+    <p>© 2026 Whiskers Cat Café</p>
+</footer>
 
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <p>© 2026 Whiskers Cat Café</p>
-            <p>Follow us: Instagram | Facebook | TikTok</p>
-        </div>
-    </footer>
-
-    ../script/script.js
+/script.js"></script>
 
 </body>
-
 </html>
+
+
