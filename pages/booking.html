@@ -13,13 +13,14 @@
         <span class="brand-name">Whiskers Cat Café</span>
     </div>
     <ul>
-<li><a href="../index.html">Home</a></li>
-<li><a href="cats.html">Our Cats</a></li>
-<li><a href="menu.html">Menu</a></li>
-<li><a href="booking.html">Book Visit</a></li>
-<li><a href="rules.html">Rules</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="cats.html">Our Cats</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="booking.html" class="active">Book Visit</a></li>
+        <li><a href="rules.html">Rules</a></li>
     </ul>
 </nav>
+
 <section class="booking-section">
     <h2>Book a Visit</h2>
     <p>
@@ -27,11 +28,32 @@
         with our friendly cats in a relaxing environment.
     </p>
     <form class="booking-form" onsubmit="return validateForm()">
+        <label for="name" class="sr-only">Your name</label>
         <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="date" class="sr-only">Visit date</label>
         <input type="date" id="date">
+
         <button type="submit">Book Now</button>
     </form>
+    <p id="confirmation" class="confirmation-message" hidden></p>
 </section>
+
+<section class="booking-info">
+    <div class="info-card">
+        <h4>⏰ Opening Hours</h4>
+        <p>Tue–Sun, 10am–5pm<br>Closed Mondays</p>
+    </div>
+    <div class="info-card">
+        <h4>👥 Visit Length</h4>
+        <p>Each session lasts up to 45 minutes</p>
+    </div>
+    <div class="info-card">
+        <h4>🎟️ Group Size</h4>
+        <p>Up to 6 guests per booking</p>
+    </div>
+</section>
+
 <footer class="footer">
     <p>© 2026 Whiskers Cat Café</p>
 </footer>
